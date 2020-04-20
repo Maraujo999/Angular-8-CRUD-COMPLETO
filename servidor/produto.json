@@ -1,0 +1,41 @@
+{
+  "produto": [
+    {
+      "id": 10,
+      "nome": "hiphone",
+      "preco": 3000
+    },
+    {
+      "id": 11,
+      "nome": "xanxund",
+      "preco": 6665
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 1574398102780515,
+      "nome": 1
+    },
+    {
+      "id": 52418,
+      "nome": "Google",
+      "preco": 6556
+    },
+    {
+      "id": 5,
+      "nome": "Motobola",
+      "preco": 545
+    },
+    {
+      "id": 65,
+      "nome": "rasus",
+      "preco": 546
+    },
+    {
+      "id": 66,
+      "nome": "aaaa",
+      "preco": 14
+    }
+  ]
+}

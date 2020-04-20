@@ -1,0 +1,50 @@
+<div class="container">
+  <div class='col-md-6 offset-md-3' >
+
+     <div id="tela1" class="card">
+        <form id="form1" class="card-body">
+            <label>Id</label>
+            <input type="number" name="id" [(ngModel)]="produto.id" class="form-control"/>
+
+            <label>Nome</label>
+            <input type="text" name="nome" [(ngModel)]="produto.nome" class="form-control"/>
+
+            <label>Preco</label>
+            <input type="number" name="preco" [(ngModel)]="produto.preco" class="form-control"/>
+
+           <button type="button" (click)="gravar();" class="btn btn-gravar mt-2 btn-block">
+              Gravar Produto</button>
+        </form>
+     </div>
+  </div>
+
+
+
+
+
+<div id='tabela'>
+   <table class="table table-bordered bg-light">
+    <thead class="bg-dark text-white text-center">
+        <tr >
+         <th>id</th>
+         <th>nome</th>
+         <th>preco</th>
+         <th>Ações</th>
+       </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of produtos">
+       <td><input type="number" name="id" [(ngModel)]="item.id " readonly class="form-control"></td>
+       <td><input type="text" name="nome" [(ngModel)]="item.nome "  class="form-control"></td>
+       <td><input type="number" name="preco" [(ngModel)]="item.preco "  class="form-control"></td>
+       <td class="text-center">
+           <button class="btn btn-info btn-sm mr-2" (click)='alterar(item.id, item)'>Alterar <i class="fa fa-edit"></i></button>
+           <button class="btn btn-danger btn-sm" (click)='excluir(item.id)'>Excluir <i class="fa fa-trash"></i></button>
+        </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+</div>

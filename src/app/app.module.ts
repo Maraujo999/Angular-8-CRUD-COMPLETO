@@ -1,18 +1,25 @@
+import { produtoService } from './service/produto-service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { ProdutoComponent } from './produto/produto.component';
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProdutoComponent
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [produtoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
